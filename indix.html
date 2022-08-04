@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shadow-lg p-3 mb-5  rounded w-75  p-5 mt-1 m-auto">
+        <label for="ProductName">Product name</label> 
+        <input type="text" class="inputs form-control mt-2 mb-2" id="ProductName">  
+        <label for="ProductPri">Product Price</label> 
+        <input type="text"  class="inputs form-control mt-2 mb-2 " id="ProductPri">  
+        <label for="ProductCateg">Product Category</label> 
+        <input type="text"  class="inputs form-control mt-2 mb-2 " id="ProductCate">  
+        <label for="productDesc">Product Describtion</label> 
+        <Textarea  class="inputs form-control mt-2 mb-2" id="productDesc"></Textarea>
+        <button id="addBnt"  class="btn btn-primary float-end mt-2 md-2 my-3">
+         Add Product
+        </button>
+       
+        <div class="clearFix"></div>
+
+        
+        
+        
+    </div>
+    <div class="shadow-lg p-3 mb-5  rounded w-75 p-5 m-auto">
+
+        <input type="text" id="searchinp" onkeyup="search(this.value)" class=" form-control my-3" placeholder="search by name.." >
+    </div>
+    <div class="shadow-lg p-3 mb-5  rounded w-75 p-5 m-auto">
+        <table class="table table-striped">
+            <thead>
+             <th>Product name</th>
+             <th>Product Price</th>
+             <th>Product Category</th>
+             <th>Product Describtion</th>
+            </thead>
+            <tbody id="tableBody">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
